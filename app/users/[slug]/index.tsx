@@ -7,8 +7,8 @@ interface indexProps {}
 const index = ({}: indexProps) => {
   return (
     <View>
-      <Text>dsagsdi</Text>
-      <Link href={'/users/1'}>이동하기</Link>
+      <Text>hfklgmklsdml</Text>
+      <Link href={'/'}>홈으로돌아가기</Link>
     </View>
   );
 };
