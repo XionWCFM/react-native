@@ -1,7 +1,7 @@
 import { Link, router } from 'expo-router';
 import React from 'react';
 import { Pressable, Text, View } from 'react-native';
-import styled, { DefaultTheme } from 'styled-components/native';
+import styled from 'styled-components/native';
 import IonIcons from '@expo/vector-icons/Ionicons';
 
 interface indexProps {}
