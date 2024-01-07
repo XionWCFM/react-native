@@ -5,7 +5,7 @@ import { Text, View } from 'react-native';
 interface indexProps {}
 
 const index = ({}: indexProps) => {
-  const { slug } = useLocalSearchParams();
+  const { slug } = useLocalSearchParams<{ slug: string }>();
   return (
     <View>
       <Text>{slug} 슬러그는 이렇습니다.</Text>
