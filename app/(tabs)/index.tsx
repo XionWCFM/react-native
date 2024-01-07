@@ -16,10 +16,14 @@ const ButtonText = styled.Text`
   font-size: 16px;
   text-align: center;
 `;
+const StyledView = styled.View`
+  background-color: ${(props) => props.theme.colors.primary};
+  padding: ${(props) => props.theme.spacing.medium}px;
+`;
 
 const index = ({}: indexProps) => {
   return (
-    <View>
+    <StyledView>
       <IonIcons name={'md-checkmark'} size={32} color={'green'} />
       <ButtonContainer>
         <ButtonText>안녕하세요</ButtonText>
@@ -29,7 +33,7 @@ const index = ({}: indexProps) => {
       <Pressable onPress={() => router.push('/users/2')}>
         <Text>Go to user2</Text>
       </Pressable>
-    </View>
+    </StyledView>
   );
 };
 
