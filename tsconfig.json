@@ -3,5 +3,5 @@
   "compilerOptions": {
     "strict": true
   },
-  "includes": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", "./src/@types/styled.d.ts"]
 }

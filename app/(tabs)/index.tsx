@@ -1,7 +1,7 @@
 import { Link, router } from 'expo-router';
 import React from 'react';
 import { Pressable, Text, View } from 'react-native';
-import styled from 'styled-components/native';
+import styled, { DefaultTheme } from 'styled-components/native';
 import IonIcons from '@expo/vector-icons/Ionicons';
 
 interface indexProps {}
@@ -17,6 +17,9 @@ const ButtonText = styled.Text`
   text-align: center;
 `;
 
+const Txt = styled.Button`
+  font-size: ${(props) => props.theme.colors.primary};
+`;
 const index = ({}: indexProps) => {
   return (
     <View>
